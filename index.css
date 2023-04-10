@@ -186,7 +186,7 @@ body {
   opacity: 0.15;
   position: absolute;
   display: inline-block;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 118px;
