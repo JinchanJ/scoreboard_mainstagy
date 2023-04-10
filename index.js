@@ -102,24 +102,6 @@
         ease: "power2.Out",
       },
       "<"
-    )
-    .from(
-      [".p1.twitter"],
-      {
-        duration: 0.75,
-        x: "-373px",
-        ease: "power2.Out",
-      },
-      "<25%"
-    )
-    .from(
-      [".p2.twitter"],
-      {
-        duration: 0.75,
-        x: "373px",
-        ease: "power2.Out",
-      },
-      "<"
     );
 
   function Start() {
@@ -215,25 +197,16 @@
 
     const tournamentContainer = document.querySelector(".tournament_container");
 
-    if (
-      data.score.best_of == 0 &&
-      (data.score.match == undefined || String(data.score.match) == "")
-    ) {
+    if (!(data.score.best_of || data.score.match)) {
       tournamentContainer.classList.add("hidden");
       tournamentContainer.classList.remove("unhidden");
     } else {
       tournamentContainer.classList.add("unhidden");
       tournamentContainer.classList.remove("hidden");
 
-      if (
-        data.score.best_of == 0 &&
-        !(data.score.match == undefined || String(data.score.match) == "")
-      ) {
+      if (!data.score.best_of && data.score.match) {
         SetInnerHtml($(".match"), data.score.match.toUpperCase());
-      } else if (
-        data.score.best_of > 0 &&
-        (data.score.match == undefined || String(data.score.match) == "")
-      ) {
+      } else if (data.score.best_of && !data.score.match) {
         SetInnerHtml($(".match"), "BEST OF " + data.score.best_of);
       } else {
         SetInnerHtml($(".match"), "BEST OF " + data.score.best_of);
