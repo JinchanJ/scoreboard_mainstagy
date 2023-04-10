@@ -15,17 +15,17 @@
     .from(
       [".p1 .inner_container"],
       {
-        duration: 0.83,
-        x: "181px",
+        duration: 0.75,
+        x: "255px",
         ease: "power2.Out",
       },
-      "<"
+      "<50%"
     )
     .from(
       [".p2 .inner_container"],
       {
-        duration: 0.83,
-        x: "-181px",
+        duration: 0.75,
+        x: "-255px",
         ease: "power2.Out",
       },
       "<"
@@ -33,8 +33,8 @@
     .from(
       [".p1 .sponsor_container"],
       {
-        duration: 0.83,
-        x: "-181px",
+        duration: 0.75,
+        x: "-255px",
         ease: "power2.Out",
       },
       "<"
@@ -43,8 +43,8 @@
     .from(
       [".p2 .sponsor_container"],
       {
-        duration: 0.83,
-        x: "181px",
+        duration: 0.75,
+        x: "255px",
         ease: "power2.Out",
       },
       "<"
