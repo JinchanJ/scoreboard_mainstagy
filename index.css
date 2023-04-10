@@ -74,14 +74,6 @@ body {
   );
 }
 
-.tournament_name {
-  color: white;
-  text-align: center;
-  height: 100%;
-  font-size: 22px;
-  width: 216px;
-}
-
 .inner_container {
   position: static;
   width: 255px;
