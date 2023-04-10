@@ -221,9 +221,9 @@
       Start();
       setInterval(Update, 100);
       UpdateMatch();
-      setInterval(UpdateMatch, 9000);
+      setInterval(UpdateMatch, 10000);
       UpdateFlagSponsor();
-      setInterval(UpdateFlagSponsor, 9000);
+      setInterval(UpdateFlagSponsor, 10000);
     });
   });
 })(jQuery);
