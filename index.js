@@ -86,7 +86,7 @@
       "<"
     )
     .from(
-      [".p1.losers_container"],
+      [".p1 .losers_container"],
       {
         duration: 0.75,
         x: "270px",
@@ -95,7 +95,7 @@
       "<"
     )
     .from(
-      [".p2.losers_container"],
+      [".p2 .losers_container"],
       {
         duration: 0.75,
         x: "-270px",
@@ -137,7 +137,7 @@
       [team.player["1"]].forEach((player, p) => {
         if (player) {
           const playerLosers = document.querySelector(
-            `.p${t + 1}.losers_container`
+            `.p${t + 1} .losers_container`
           );
 
           if (team.losers) {
@@ -156,7 +156,7 @@
           );
 
           SetInnerHtml(
-            $(`.p${t + 1}.losers_container`),
+            $(`.p${t + 1} .losers_container`),
             `${team.losers ? "<span class='losers'>[L]</span>" : ""}`
           );
 

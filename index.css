@@ -37,7 +37,7 @@ body {
   align-items: center;
   overflow: hidden;
   justify-content: space-between;
-  width: 255px;
+  width: 295px;
   height: 52px;
   top: 26px;
 }
@@ -45,13 +45,13 @@ body {
 .p1.container {
   flex-direction: row-reverse;
   background-position: 100% 0;
-  left: 540px;
+  left: 500px;
 }
 
 .p2.container {
   flex-direction: row;
   background-position: 0 0;
-  right: 540px;
+  right: 500px;
 }
 
 .tournament_container {
@@ -277,8 +277,8 @@ body {
   border-bottom-right-radius: 10px;
   background: linear-gradient(
     90deg,
-    rgba(57, 45, 103, 1) 0%,
-    rgba(91, 57, 117, 1) 100%
+    rgba(54, 46, 99, 0.95) 0%,
+    rgba(92, 51, 117, 0.95) 100%
   );
   left: 800px;
 }
@@ -296,26 +296,26 @@ body {
   width: 50px;
   height: 42px;
   background: white;
-  top: 30px;
+  top: 5px;
   border-radius: 10px;
 }
 
-.p1.losers_container {
+.p1 .losers_container {
   background: linear-gradient(
     90deg,
-    rgba(57, 45, 103, 1) 0%,
-    rgba(91, 57, 117, 1) 100%
+    rgba(54, 46, 99, 1) 0%,
+    rgba(92, 51, 117, 1) 100%
   );
-  left: 500px;
+  left: 0px;
 }
 
-.p2.losers_container {
+.p2 .losers_container {
   background: linear-gradient(
     270deg,
-    rgba(57, 45, 103, 1) 0%,
-    rgba(91, 57, 117, 1) 100%
+    rgba(54, 46, 99, 1) 0%,
+    rgba(92, 51, 117, 1) 100%
   );
-  right: 500px;
+  right: 0px;
 }
 
 .losers {
